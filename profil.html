@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RT 05z - San Francisco</title>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">
+  <img src="img/logo unindra.png" alt="Logo RT" class="logo-img">
+  <div class="logo-text">
+    RT 05z<br>
+    <small>San Francisco</small>
+  </div>
+</div>
+
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="profil.html">Profil</a>
+      <a href="warga.html">Warga</a>
+      <a href="kegiatan.html">Kegiatan</a>
+      <a href="wisata.html">Wisata</a>
+    </div>
+  </div>
+</header>
+
+
+<!-- ================= PROFIL RT PAGE ================= -->
+<link rel="stylesheet" href="style.css">
+<section>
+  <h2 class="title">Profil RT</h2>
+  <div class="geo">
+<div style="max-width:900px;margin:40px auto">
+    <img src="img/kebersamaan.jpeg">
+  </div>
+    <div class="accordion">
+      <div class="acc-item">
+        <button class="acc-btn">Visi <span>v</span></button>
+        <div class="acc-content">Mewujudkan lingkungan RT yang aman, tertib, dan harmonis bagi seluruh warga.</div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-btn">Misi <span>v</span></button>
+        <div class="acc-content">Meningkatkan pelayanan administrasi, memperkuat kebersamaan, dan menjaga ketertiban lingkungan.</div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-btn">Sejarah RT <span>v</span></button>
+        <div class="acc-content">RT 05z dibentuk sebagai wadah pelayanan masyarakat yang berfokus pada kesejahteraan warga.</div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+<style>
+.accordion .acc-item {border-bottom:1px solid #ddd;padding:12px 0}
+.acc-btn {width:100%;background:none;border:none;font-size:18px;text-align:left;display:flex;justify-content:space-between;cursor:pointer}
+.acc-content {display:none;padding:10px 0;color:#555;line-height:1.6}
+.acc-item.active .acc-content {display:block}
+</style>
+</body>
+</html>
+
+<!-- ================= GEOGRAFIS ================= -->
+<section>
+  <h2 class="title">Geografis RT</h2>
+
+  <div class="geo">
+    <img src="img/SF.jpeg">
+    <p>Luas Daerah</p>
+    <h3>121.480.000 m²</h3>
+    <p>Jumlah Penduduk</p>
+    <h3>35.000 jiwa</h3>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+      <strong>RT 05z</strong><br>
+      San Francisco<br>
+      California
+    </div>
+
+    <div class="footer-item">
+      <button class="footer-toggle">🌐 Kunjungan Website <span>v</span></button>
+      <div class="footer-content">
+        <p>Jumlah Kunjungan: 1234</p>
+      </div>
+    </div>
+
+    <div class="footer-item">
+      <a href="kontak.html" class="footer-link">📞 Kontak RT <span>›</span></a>
+      <div class="footer-content">
+        <p>0812xxxxxxx</p>
+      </div>
+    </div>
+
+    <div class="footer-item">
+      <a href="sosial.html" class="footer-link">📱 Sosial Media <span>›</span></a>
+      <div class="footer-content">
+        <p>Instagram | Facebook</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    2025 © RT.05Z, San Francisco - California
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.acc-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    btn.parentElement.classList.toggle('active')
+  })
+})
+document.querySelectorAll('.acc-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    btn.parentElement.classList.toggle('active');
+  });
+});
+document.querySelectorAll('.acc-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    btn.parentElement.classList.toggle('active')
+  })
+})
+</script>
+</body>
+</html>
+
+
+
+
+
+

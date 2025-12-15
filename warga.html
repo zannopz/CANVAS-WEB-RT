@@ -1,0 +1,139 @@
+<!-- ================= NAVBAR ================= -->
+<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warga - RT 05z</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="logo">
+  <img src="img/logo unindra.png" alt="Logo RT" class="logo-img">
+  <div class="logo-text">
+    RT 05z<br>
+    <small>San Francisco</small>
+  </div>
+</div>
+
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="profil.html">Profil</a>
+      <a href="warga.html">Warga</a>
+      <a href="kegiatan.html">Kegiatan</a>
+      <a href="wisata.html">Wisata</a>
+    </div>
+  </div>
+</header>
+
+<h2 class="title">Warga</h2>
+<p class="subtitle">Komposisi penduduk yang ada di lingkungan kami</p>
+
+
+<div class="stats">
+  <div>
+    <img src="img/cewe.png">
+    <h3>13.000</h3>
+    <p>Perempuan</p>
+  </div>
+  <div>
+    <img src="img/cowo.png">
+    <h3>22.000</h3>
+    <p>Laki-laki</p>
+  </div>
+  <div>
+    <img src="img/masyarakat.png">
+    <h3>35.000</h3>
+    <p>Penduduk</p>
+  </div>
+  <div>
+    <img src="img/keluarga.png">
+    <h3>8.000</h3>
+    <p>Kepala Keluarga</p>
+  </div>
+</div>
+
+<div class="charts">
+  <div class="chart-box">
+    <h4>Statistik Umur</h4>
+    <canvas id="umurChart"></canvas>
+  </div>
+  <div class="chart-box">
+    <h4>Statistik Pekerjaan</h4>
+    <canvas id="pekerjaanChart"></canvas>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+      <strong>RT 05z</strong><br>
+      San Francisco<br>
+      California
+    </div>
+
+    <div class="footer-item">
+      <button class="footer-toggle">🌐 Kunjungan Website <span>v</span></button>
+      <div class="footer-content">
+        <p>Jumlah Kunjungan: 1234</p>
+      </div>
+    </div>
+
+    <div class="footer-item">
+      <a href="kontak.html" class="footer-link">📞 Kontak RT <span>›</span></a>
+      <div class="footer-content">
+        <p>0812xxxxxxx</p>
+      </div>
+    </div>
+
+    <div class="footer-item">
+      <a href="sosial.html" class="footer-link">📱 Sosial Media <span>›</span></a>
+      <div class="footer-content">
+        <p>Instagram | Facebook</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    2025 © RT.05Z, San Francisco - California
+  </div>
+</footer>
+
+
+<script>
+// LINE CHART UMUR
+new Chart(document.getElementById('umurChart'), {
+  type: 'line',
+  data: {
+    labels: ['0-5 Thn', '5-12 Thn', '12-21 Thn', '21-40 Thn', '40-60 Thn'],
+    datasets: [{
+      data: [3000, 8000, 5000, 10000, 8000],
+      borderColor: '#5bc0de',
+      tension: 0.3,
+      fill: false
+    }]
+  },
+  options: {
+    plugins: { legend: { display: false } },
+    scales: { y: { beginAtZero: true } }
+  }
+});
+
+// PIE CHART PEKERJAAN
+new Chart(document.getElementById('pekerjaanChart'), {
+  type: 'pie',
+  data: {
+    labels: ['Pelajar/Mahasiswa', 'Pegawai Negeri', 'Pegawai Swasta', 'Wiraswasta', 'Mengurus Rumah Tangga', 'Belum/Tidak Bekerja'],
+    datasets: [{
+      data: [25, 10, 20, 15, 18, 12],
+      backgroundColor: ['#f06292','#9575cd','#4dd0e1','#4db6ac','#aed581','#ffcc80']
+    }]
+  }
+});
+</script>
+
+</body>
+</html>
